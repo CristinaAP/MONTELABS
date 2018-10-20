@@ -21,6 +21,7 @@ body{
 .im {
     width: 100%;
     margin: auto;
+    z-index: 10;
 }
 
 .im img {
@@ -39,6 +40,7 @@ body{
     position: absolute;
     padding-top: 120px;
     justify-content: space-between;
+    z-index: 15;
 }
 
 .left {
@@ -96,17 +98,31 @@ body{
 
 /*Main*/
 
-.mont img {
+.mont {
     margin-top: 149px;
     width: 100%;
     height: auto;
     min-width: 626px;
 }
 
-.top {
-    margin-top: 149px;
+.motto {
+    position: relative;
+    text-align: center;
+    margin-top: -700px;
     width: 100%;
-    height: auto;
-    min-width: 626px;
-    position: absolute;
+}
+
+.motto p {
+  position: absolute;
+  font-family : Raleway;
+  font-size : 60px;
+  line-height : 100px;
+  letter-spacing : 10.8px;
+  color : #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #07172d7a;
+  border-top: solid #07172d00 500px;
+  border-bottom: solid #07172d00 500px;
 }
